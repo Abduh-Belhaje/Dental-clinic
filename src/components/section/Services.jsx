@@ -1,118 +1,96 @@
 "use client";
 
-import { useState } from "react";
+import { Card } from "@/components/ui/card";
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Smile, Users, Coffee, Calendar } from "lucide-react";
-import srvPic from "../../assets/srvPic.png";
+import GeneralDentistry from "../../assets/GeneralDentistry.jpg";
+import CosmeticDentistry from "../../assets/CosmeticDentistry.jpg";
+import Orthodontics from "../../assets/Orthodontics.jpg";
+import DentalImplants from "../../assets/DentalImplants.jpg";
+import EmergencyDentistry from "../../assets/EmergencyDentistry.jpg";
+import PediatricDentistry from "../../assets/PediatricDentistry.jpg";
 
-// Professional Features Data
-const professionalFeatures = [
+// Sample service data with images
+const services = [
   {
-    icon: <Smile className="w-12 h-12 text-primary mb-4" />,
-    title: "Patient-Centered Care",
+    title: "General Dentistry",
     description:
-      "Our approach prioritizes patient comfort and trust at every step.",
-    details:
-      "We ensure a professional, personalized experience, utilizing the latest techniques and technologies for optimal care.",
+      "Keep your smile healthy with our comprehensive checkups, cleanings, and preventative care.",
+    image: GeneralDentistry,
   },
   {
-    icon: <Users className="w-12 h-12 text-primary mb-4" />,
-    title: "Comprehensive Family Care",
+    title: "Cosmetic Dentistry",
     description:
-      "Expert dental care tailored to meet the needs of every family member.",
-    details:
-      "We provide specialized treatments across all age groups, ensuring high-quality care in a welcoming environment.",
+      "Boost your confidence with treatments like veneers, teeth whitening, and smile makeovers.",
+    image: CosmeticDentistry,
   },
   {
-    icon: <Coffee className="w-12 h-12 text-primary mb-4" />,
-    title: "Modern Comfort",
+    title: "Orthodontics",
     description:
-      "Our clinic offers a relaxing, well-equipped environment for every visit.",
-    details:
-      "Enjoy a serene waiting area with modern amenities designed to enhance your overall experience while you wait.",
+      "Achieve straighter teeth with options that suit your lifestyle, including braces and Invisalign.",
+    image: Orthodontics,
   },
   {
-    icon: <Calendar className="w-12 h-12 text-primary mb-4" />,
-    title: "Flexible Appointments",
+    title: "Dental Implants",
     description:
-      "Efficient scheduling options designed to fit into your busy routine.",
-    details:
-      "We offer early morning, evening, and weekend appointments to accommodate your lifestyle, including emergency care as needed.",
+      "Restore your smile with permanent, natural-looking dental implants.",
+    image: DentalImplants,
+  },
+  {
+    title: "Emergency Dentistry",
+    description:
+      "We offer same-day emergency appointments for those unexpected dental issues.",
+    image: EmergencyDentistry,
+  },
+  {
+    title: "Pediatric Dentistry",
+    description:
+      "Our kid-friendly team is here to make sure your child's teeth stay healthy and strong.",
+    image: PediatricDentistry,
   },
 ];
 
-export default function Services() {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
+export default function ServiceSection() {
   return (
-    <section className="my-3 py-16 bg-gradient-to-b from-blue-50 to-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            Welcome to Our Dental Clinic
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Delivering excellence in dental care with a focus on professionalism
-            and patient satisfaction.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src={srvPic}
-              alt="Professional dental team"
-              className="object-cover w-full h-full"
-              layout="fill"
-            />
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {professionalFeatures.map((feature, index) => (
-              <Card
-                key={index}
-                className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300 relative overflow-hidden"
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-              >
-                <CardContent className="p-6">
-                  {feature.icon}
-                  <h3 className="text-lg font-semibold mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600">{feature.description}</p>
-                  <div
-                    className={`absolute inset-0 bg-blue-600/90 text-primary-foreground p-4 transition-all duration-300 ease-in-out flex flex-col justify-center ${
-                      hoveredIndex === index
-                        ? "opacity-100"
-                        : "opacity-0 pointer-events-none"
-                    }`}
-                    aria-hidden={hoveredIndex !== index}
-                  >
-                    <h3 className="text-lg font-semibold mb-2">
-                      {feature.title}
-                    </h3>
-                    <p className="text-sm">{feature.details}</p>
-                  </div>
-                </CardContent>
-                <div
-                  className={`absolute bottom-2 right-2 text-sm font-semibold transition-opacity duration-300 ${
-                    hoveredIndex === index ? "opacity-0" : "opacity-100"
-                  }`}
-                >
-                  Learn More
+    <section
+      className="py-12 bg-cover bg-center"
+      style={{ backgroundImage: "url('/path/to/your/background-image.jpg')" }} // Replace with actual background image path
+    >
+      <div className="container mx-auto px-4 py-16 bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg">
+        <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
+        <p className="text-center mb-12 max-w-2xl mx-auto">
+          At bayfrontdental, we offer a full range of dental services to meet
+          all of your needs. Whether it's a routine cleaning or a more complex
+          treatment, you're in great hands.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service, index) => (
+            <Card
+              key={index}
+              className="relative group overflow-hidden hover:shadow-lg transition-shadow duration-300"
+            >
+              {/* Background image covering entire card */}
+              <div className="relative h-64 w-full">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-lg"
+                />
+                {/* Title at the bottom-left with white background */}
+                <div className="absolute bottom-0 left-0 bg-white bg-opacity-80 p-4 z-10">
+                  <h3 className="text-xl font-semibold">{service.title}</h3>
                 </div>
-              </Card>
-            ))}
-          </div>
-        </div>
 
-        <div className="text-center mt-12">
-          <Button size="lg" className="bg-primary text-white hover:bg-blue-600">
-            Schedule Your Visit
-          </Button>
+                {/* Hidden description that appears on hover */}
+                <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white text-center px-4">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

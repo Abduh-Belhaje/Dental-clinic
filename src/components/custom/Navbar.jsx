@@ -26,9 +26,9 @@ export default function Navbar() {
             <Link href="/about" passHref>
               About
             </Link>
-            <Link href="/services" passHref>
-              Services
-            </Link>
+            {/* <Link href="/services" passHref> */}
+            {/* Services
+            </Link> */}
             <Link href="/contact" passHref>
               Contact
             </Link>

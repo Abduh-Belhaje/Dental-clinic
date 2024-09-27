@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Services />
+      <div id="services">
+        <Services />
+      </div>
       <TestimonialSlider />
     </div>
   );
