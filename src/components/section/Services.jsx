@@ -52,7 +52,7 @@ const services = [
 export default function ServiceSection() {
   return (
     <section
-      className="py-32 bg-cover bg-center"
+      className="py-56 bg-cover bg-center"
       style={{ backgroundImage: "url('/path/to/your/background-image.jpg')" }} // Replace with actual background image path
     >
       <div className="container mx-auto px-4 py-16 bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg">
