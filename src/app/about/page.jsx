@@ -27,7 +27,7 @@ export default function AboutPage() {
             Welcome to Bayfront Dental
           </h2>
           <p className="text-xl text-black">
-            At Bayfront Dental, we're committed to providing top-notch dental
+            At Bayfront Dental, we re committed to providing top-notch dental
             care in a warm, personalized environment. Our team of experienced
             professionals is dedicated to ensuring your comfort and delivering
             exceptional results.
@@ -48,12 +48,12 @@ export default function AboutPage() {
             <DentistCard
               name="Dr. George Gounakis"
               image={GeorgeGounakis}
-              bio="Some people feel that implant dentistry falls under the category of cosmetic dentistry, but that's not entirely accurate. Although implants certainly do improve one's appearance, their impact goes way beyond the flash of a perfect smile."
+              bio="Some people feel that implant dentistry falls under the category of cosmetic dentistry, but that s not entirely accurate. Although implants certainly do improve one appearance, their impact goes way beyond the flash of a perfect smile."
             />
             <DentistCard
               name="Dr. Taylor Light"
               image={taylorlight}
-              bio="As your dentist, I want to be your partner in achieving and maintaining your BEST oral health. Whether you're looking to attain a dazzling smile or want to ensure that your gut microbiome is healthy, my goal is to make sure you're maintaining your optimal dental health."
+              bio="As your dentist, I want to be your partner in achieving and maintaining your BEST oral health. Whether you re looking to attain a dazzling smile or want to ensure that your gut microbiome is healthy, my goal is to make sure you re maintaining your optimal dental health."
             />
           </div>
         </section>
@@ -120,7 +120,7 @@ export default function AboutPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-black">
-                We prioritize our patients' comfort, needs, and overall
+                We prioritize our patients comfort, needs, and overall
                 well-being in every aspect of our practice.
               </CardContent>
             </Card>

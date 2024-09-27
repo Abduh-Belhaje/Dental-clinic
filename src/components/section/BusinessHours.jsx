@@ -17,7 +17,7 @@ export default function BusinessHours() {
             </h2>
           </div>
           <p className="text-muted-foreground">
-            We believe that every smile tells a story, and we're here to help
+            We believe that every smile tells a story, and we re here to help
             make yours shine. Our Miami-based dental clinic is led by Dr.
             [Name], a passionate and highly qualified dentist with over [X]
             years of experience. Our team is dedicated to providing
@@ -45,12 +45,12 @@ export default function BusinessHours() {
           <Card className="w-full max-w-md">
             <CardHeader>
               <CardTitle className="text-3xl font-bold pt-5 ">
-                Don't Hesitate to Do Consultation
+                Don t Hesitate to Do Consultation
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <p className="text-muted-foreground">
-                We're here to address your dental concerns and provide expert
+                We re here to address your dental concerns and provide expert
                 advice. Schedule a consultation with our experienced team today.
               </p>
               <div className="space-y-2">
