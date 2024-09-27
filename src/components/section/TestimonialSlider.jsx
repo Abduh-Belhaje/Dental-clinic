@@ -75,7 +75,7 @@ export default function TestimonialSlider() {
               <Quote className="w-12 h-12 text-primary mb-6 mx-auto" />
               <div className="text-center">
                 <p className="text-xl text-gray-700 italic mb-6">
-                  "{testimonials[currentIndex].quote}"
+                `&quots;`{testimonials[currentIndex].quote} `&quots;`
                 </p>
                 <div className="flex items-center justify-center mb-4">
                   <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
