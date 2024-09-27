@@ -60,7 +60,7 @@ export default function AboutPage() {
 
         {/* Team Introduction */}
         <section className="mb-16 my-12">
-          <h2 className="text-3xl font-semibold mb-8 text-blue-800 text-center">
+          <h2 className="text-3xl font-semibold mb-8 text-blue-800 text-center pt-32">
             Meet the Team
           </h2>
           <p className="text-xl text-black text-center mb-8 max-w-3xl mx-auto">
@@ -96,7 +96,7 @@ export default function AboutPage() {
 
         {/* Mission & Values */}
         <section className=" my-12">
-          <h2 className="text-3xl font-semibold mb-8 text-blue-800 text-center pt-4">
+          <h2 className="text-3xl font-semibold mb-8 text-blue-800 text-center pt-32">
             Our Mission & Values
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

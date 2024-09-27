@@ -5,7 +5,7 @@ import { Progress } from "@/components/ui/progress";
 
 export default function BusinessHours() {
   return (
-    <div className="container mx-auto px-4 py-16 md:py-24">
+    <div className="container mx-auto px-4 py-20 md:py-0 ">
       <div className="grid md:grid-cols-2 gap-12">
         <div className="space-y-8">
           <div>
@@ -44,7 +44,7 @@ export default function BusinessHours() {
         <div className="flex justify-center items-center">
           <Card className="w-full max-w-md">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold text-primary">
+              <CardTitle className="text-3xl font-bold pt-5 ">
                 Don't Hesitate to Do Consultation
               </CardTitle>
             </CardHeader>
