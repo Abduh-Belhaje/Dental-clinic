@@ -44,7 +44,7 @@ const services = [
   {
     title: "Pediatric Dentistry",
     description:
-      "Our kid-friendly team is here to make sure your child's teeth stay healthy and strong.",
+      "Our kid-friendly team is here to make sure your childs teeth stay healthy and strong.",
     image: PediatricDentistry,
   },
 ];
@@ -59,8 +59,8 @@ export default function ServiceSection() {
         <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
         <p className="text-center mb-12 max-w-2xl mx-auto">
           At bayfrontdental, we offer a full range of dental services to meet
-          all of your needs. Whether it's a routine cleaning or a more complex
-          treatment, you're in great hands.
+          all of your needs. Whether it s a routine cleaning or a more complex
+          treatment, you re in great hands.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
