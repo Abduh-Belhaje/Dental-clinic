@@ -12,7 +12,7 @@ export default function BusinessHours() {
             <Button variant="outline" size="sm" className="text-primary">
               Why Choose Us
             </Button>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mt-4">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold  mt-4">
               Helping Your Dental Problems
             </h2>
           </div>
