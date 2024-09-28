@@ -24,9 +24,9 @@ export default function Services() {
   const [currentService, setCurrentService] = useState(0);
 
   return (
-    <section className="w-full py-12 py-36 lg:py-64">
-      <div className=" px-5 border flex justify-between items-start mb-6">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+    <section className="w-full py-12 py-16 md:pt-64 pt-36">
+      <div className=" px-5 flex justify-between items-center mb-6">
+              <h2 className="text-5xl font-bold tracking-tighter sm:text-7xl">
                 Our Services
               </h2>
               <Button variant="outline">View all</Button>
