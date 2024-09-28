@@ -12,6 +12,9 @@ import {
 } from "@/components/ui/carousel";
 
 import EmergencyDentistry from "../../assets/EmergencyDentistry.jpg";
+import GeneralDentistry from "../../assets/GeneralDentistry.jpg";
+import PediatricDentistry from "../../assets/PediatricDentistry.jpg";
+import CosmeticDentistry from "../../assets/CosmeticDentistry.jpg";
 
 const services = [
   {
@@ -19,16 +22,16 @@ const services = [
     image: EmergencyDentistry,
   },
   {
-    title: "Dental Treatment",
-    image: EmergencyDentistry,
+    title: "Cosmetic Dentistry",
+    image: CosmeticDentistry,
   },
   {
-    title: "Ozone Cleaning",
-    image: EmergencyDentistry,
+    title: "Pediatric Dentistry",
+    image: PediatricDentistry,
   },
   {
-    title: "Dental Crowns",
-    image: EmergencyDentistry,
+    title: "General Dentistry",
+    image: GeneralDentistry,
   },
 ];
 

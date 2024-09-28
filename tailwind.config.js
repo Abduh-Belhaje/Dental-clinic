@@ -52,7 +52,7 @@ module.exports = {
   		},
   		fontFamily: {
   			sans: ["Roboto Condensed", "sans-serif"],
-  			playfair: ["Great Vibes", "cursive"]
+  			playfair: ["DM Serif Display", "serif"]
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

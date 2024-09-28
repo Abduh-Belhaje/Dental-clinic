@@ -4,19 +4,20 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import serviceImg from "../../assets/serviceImg.jpg";
+import serviceImg2 from "../../assets/107047615_dentist2.jpg";
 
 const services = [
   {
     title: "Clear Aligners",
     description:
-      'Clear aligners are orthodontic devices that are a transparent, plastic form of dental braces used to adjust teeth. They are often referred to as "invisible braces." Clear aligners have been gaining popularity among adults who want to straighten their teeth discreetly. They are removable and nearly invisible, making them a convenient choice for many patients.',
+      'Welcome to Bayfront, where your smile is our priority. Located in the heart of Miami, we offer top-quality dental care for the whole family, specializing in everything from routine checkups to advanced cosmetic treatments. Book your appointment today and experience gentle, compassionate care in a comfortable environment.',
     image: serviceImg,
   },
   {
     title: "Teeth Whitening",
     description:
-      "Professional teeth whitening is a cosmetic dental procedure that removes stains and discoloration from teeth, resulting in a brighter and more attractive smile. This treatment is popular among individuals looking to enhance their appearance and boost their confidence.",
-    image: serviceImg,
+      "Welcome to Bayfront, where your smile is our priority. Located in the heart of Miami, we offer top-quality dental care for the whole family, specializing in everything from routine checkups to advanced cosmetic treatments. Book your appointment today and experience gentle, compassionate care in a comfortable environment.",
+    image: serviceImg2,
   },
 ];
 
@@ -26,10 +27,10 @@ export default function Services() {
   return (
     <section className="w-full py-12 py-16 md:pt-64 pt-36">
       <div className=" px-5 flex justify-between items-center mb-6">
-              <h2 className="text-5xl font-bold tracking-tighter sm:text-7xl">
+              <h2 className="text-4xl font-medium tracking-tighter sm:text-7xl">
                 Our Services
               </h2>
-              <Button variant="outline">View all</Button>
+              <Button variant="outline" className="px-8 rounded-2xl" >View all</Button>
       </div>
       <div className="container px-4 md:px-6">
         <div className="flex flex-col lg:flex-row gap-12">

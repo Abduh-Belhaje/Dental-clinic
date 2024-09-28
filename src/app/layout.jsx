@@ -23,8 +23,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+       <head>
+        {/* Add the self-closing slash at the end of the link tag */}
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-background px-10 antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-background px-10 antialiased overflow-x-hidden`}
       >
         <Navbar />
         <div className="bg-white rounded-md">
