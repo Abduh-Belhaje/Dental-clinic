@@ -12,25 +12,26 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "/service", label: "service" },
+  { href: "/contact", label: "Contact" }
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="border-b">
+    <nav className="text-white">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
-            <Image src={Logo} width={82} height={82} alt="Logo" />
+          <div className="flex-shrink-0 font-bold text-xl">
+            Bayfront Clinic
           </div>
           <div className="hidden md:flex items-center space-x-4">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+                className="text-lg hover:text-gray-300 transition-colors"
               >
                 {item.label}
               </Link>
@@ -54,7 +55,7 @@ export default function Navbar() {
                   )}
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white">
                 <nav className="flex flex-col space-y-4 mt-8">
                   {navItems.map((item) => (
                     <Link

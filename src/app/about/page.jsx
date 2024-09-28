@@ -15,7 +15,7 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-white">
+    <div className="min-h-screen from-blue-100 to-white">
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-5xl font-bold text-center mb-12 text-blue-900">
           About Bayfront Dental
@@ -23,10 +23,7 @@ export default function AboutPage() {
 
         {/* Welcome Message */}
         <section className="mb-16 text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl font-semibold mb-6 text-blue-800">
-            Welcome to Bayfront Dental
-          </h2>
-          <p className="text-xl text-black">
+          <p className="text-xl text-black ">
             At Bayfront Dental, we re committed to providing top-notch dental
             care in a warm, personalized environment. Our team of experienced
             professionals is dedicated to ensuring your comfort and delivering
@@ -59,8 +56,8 @@ export default function AboutPage() {
         </section>
 
         {/* Team Introduction */}
-        <section className="mb-16 my-12">
-          <h2 className="text-3xl font-semibold mb-8 text-blue-800 text-center pt-32">
+        <section className="mb-16 md:pt-28 pt-12">
+          <h2 className="text-3xl font-semibold mb-8 text-blue-800 text-center">
             Meet the Team
           </h2>
           <p className="text-xl text-black text-center mb-8 max-w-3xl mx-auto">
@@ -140,7 +137,7 @@ export default function AboutPage() {
         </section>
 
         {/* Why Choose Us */}
-        <section className="my-12">
+        <section className="pt-12">
           <h2 className="text-3xl font-semibold mb-8 text-blue-800 text-center my-8">
             Why Choose Bayfront Dental?
           </h2>

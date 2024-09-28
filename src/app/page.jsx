@@ -7,15 +7,16 @@ import TestimonialSlider from "@/components/section/TestimonialSlider";
 export default function Home() {
   return (
     <div>
-      <div id="book">
-        <Header />
+      <Header />
+      {/* <div id="book">
+        
       </div>
       <Hero />
       <BusinessHours />
       <div id="services">
         <Services />
       </div>
-      <TestimonialSlider />
+      <TestimonialSlider /> */}
     </div>
   );
 }

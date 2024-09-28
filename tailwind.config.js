@@ -14,10 +14,10 @@ module.exports = {
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
+          DEFAULT: "#f6f6f7",
           foreground: "hsl(var(--secondary-foreground))",
         },
-        background: "hsl(var(--background))",
+        background: "#26292f",
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -52,6 +52,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Roboto Condensed", "sans-serif"],
+        playfair: ["Playfair Display", "serif"]
       },
       borderRadius: {
         lg: "var(--radius)",
