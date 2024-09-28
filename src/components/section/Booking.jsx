@@ -52,7 +52,7 @@ export default function Booking() {
                         </PopoverContent>
                     </Popover>
                     <Selector />
-                    <Button className="" >Book Now !</Button>
+                    <Button className="bg-primary" >Book Now !</Button>
                 </div>
             </div>
         </div>

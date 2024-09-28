@@ -1,44 +1,26 @@
 "use client";
-import dynamic from "next/dynamic";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
-// Dynamically import MapContainer and other react-leaflet components
-// const MapContainer = dynamic(() => import("react-leaflet").then((mod) => mod.MapContainer), { ssr: false });
-// const TileLayer = dynamic(() => import("react-leaflet").then((mod) => mod.TileLayer), { ssr: false });
-// const Marker = dynamic(() => import("react-leaflet").then((mod) => mod.Marker), { ssr: false });
-// const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), { ssr: false });
-
-// Coordinates for 123 Business St, Miami, FL 33131
-// const businessLocation = [25.7741728, -80.1906242];
-
-// Custom MapPin SVG as inline HTML for use in Leaflet
-// const customIcon = L.divIcon({
-//   className: "custom-icon", // Custom class for styling
-//   html: `
-//     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 22C16 18 20 14.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 14.4183 8 18 12 22Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-//   `,
-//   iconSize: [24, 24], // Size of the icon
-//   iconAnchor: [12, 24], // Anchor point for positioning
-//   popupAnchor: [0, -24], // Popup position relative to the icon
-// });
-
 export default function ContactPage() {
   return (
     <div className="container mx-auto px-4 py-12">
       <h1 className="text-4xl font-bold text-center mb-12">Contact Us</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
-          <Card>
+          <Card className="shadow-lg">
             <CardHeader>
-              <CardTitle>Send us a message</CardTitle>
+              <CardTitle className="text-2xl font-semibold">
+                Send us a message
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <form className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label
                       htmlFor="firstName"
@@ -106,34 +88,78 @@ export default function ContactPage() {
               </form>
             </CardContent>
           </Card>
-        </div>
-        <div className="space-y-8">
-          <Card>
+          <Card className="shadow-lg mt-3">
             <CardHeader>
-              <CardTitle>Business Hours</CardTitle>
+              <CardTitle className="text-2xl font-semibold">
+                Contact Information
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <MapPin className="w-5 h-5 text-primary" />
+                <span>224 SE 1st St, Miami, FL 33131</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-primary" />
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-primary" />
+                <span>contact@dentalclinic.com</span>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="space-y-8">
+          <Card className="shadow-lg">
+            <CardHeader>
+              <CardTitle className="text-2xl font-semibold">Location</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="aspect-video w-full">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.652604195117!2d-80.19181988487643!3d25.770056783775725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b695adf99967%3A0x78c8d1eb489cd1cb!2s224%20SE%201st%20St%2C%20Miami%2C%20FL%2033131%2C%20USA!5e0!3m2!1sen!2sus!4v1693019099622!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Dental Clinic Location"
+                ></iframe>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-lg">
+            <CardHeader>
+              <CardTitle className="text-2xl font-semibold">
+                Business Hours
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
                 <div className="flex justify-between items-center">
                   <div className="flex items-center">
-                    <Clock className="w-5 h-5 mr-2 text-gray-600" />
+                    <Clock className="w-5 h-5 mr-2 text-primary" />
                     <span>Monday - Friday</span>
                   </div>
-                  <span>9:00 AM - 6:00 PM</span>
+                  <span className="font-medium">9:00 AM - 6:00 PM</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <div className="flex items-center">
-                    <Clock className="w-5 h-5 mr-2 text-gray-600" />
+                    <Clock className="w-5 h-5 mr-2 text-primary" />
                     <span>Saturday</span>
                   </div>
-                  <span>10:00 AM - 4:00 PM</span>
+                  <span className="font-medium">10:00 AM - 4:00 PM</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <div className="flex items-center">
-                    <Clock className="w-5 h-5 mr-2 text-gray-600" />
+                    <Clock className="w-5 h-5 mr-2 text-primary" />
                     <span>Sunday</span>
                   </div>
-                  <span>Closed</span>
+                  <span className="font-medium">Closed</span>
                 </div>
               </div>
             </CardContent>
