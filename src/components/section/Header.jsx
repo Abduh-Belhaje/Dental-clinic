@@ -17,7 +17,7 @@ import Doctor from "../../assets/Doctor.png";
 export default function Header() {
   return (
     <div 
-      className="flex flex-col items-center py-10"
+      className="flex flex-col items-center py-10 text-background"
       style={{
         backgroundImage: `url(${BackgroundLines.src})`, // Replace with your image path
         backgroundSize: 'cover', // Ensures the image covers the entire div
