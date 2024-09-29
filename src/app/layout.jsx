@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" /> {/* Favicon */}
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-background md:px-10 px-5  antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-background md:px-10 px-5 pb-10  antialiased overflow-x-hidden`}
       >
         <Navbar />
         <div className="bg-white rounded-md">

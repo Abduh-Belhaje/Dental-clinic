@@ -14,7 +14,7 @@ export default function Header() {
       className="flex flex-col items-center text-background mb-36 relative "
       >
         <div className="absolute 0 z-0 flex md:mt-0 mt-20 justify-center items-center">
-            <Image src={BackgroundLines} alt="" className="" />
+            <Image src={BackgroundLines} alt="" className="rounded-md" />
         </div>
       <div className="pb-8 pt-24 z-50 font-playfair flex flex-col items-center md:w-9/12 w-11/12">
           <div className="flex items-center md:justify-center justify-evenly w-full">
